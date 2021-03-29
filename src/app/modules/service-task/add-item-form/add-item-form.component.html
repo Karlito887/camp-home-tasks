@@ -1,0 +1,20 @@
+<form [formGroup]="addPersonForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+        <mat-label for="name">Name</mat-label>
+        <input matInput type="text" id="name" formControlName="name">
+    </mat-form-field>
+  
+    <mat-form-field>
+        <mat-label for="degree">Degree</mat-label>
+        <input matInput type="text" id="degree" formControlName="degree">
+    </mat-form-field>
+   
+    <mat-form-field>
+        <mat-label for="direction">Direction</mat-label>
+        <input matInput type="text" id="direction" formControlName="direction">
+    </mat-form-field>
+
+    <button type="submit" mat-raised-button>Add new person</button>
+</form>
+
+
